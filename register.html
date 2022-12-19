@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register Page</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="Register Page">
+        <meta name="description" content="Register Page with validation">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="validate.js" ></script>
+    </head>
+    <body onload="document.registration.uname.focus()">
+        <h2>Register Page</h2>
+        <div class="login">
+            <form id="registration" name="registration" onsubmit="return formValidation()">
+                <label><b>Name</b></label><br>
+                <input type="text" name="uname" id="Uname" placeholder="Enter Name" size="20" required><br><br>
+                <label><b>Userid</b></label><br>
+                <input type="text" name="uid" id="Uname" placeholder="Enter Unique User ID" size="20" required><br><br>
+                <label><b>Password</b></label><br>
+                <input type="password" name="password" id="Uname" placeholder="Enter password" size="20" required><br><br>
+                <label><b>Country</b></label>
+                <select name="country">
+                    <option selected="" value="Default">Please Select a country</option>
+                    <option value="AUS">Australia</option>
+                    <option value="IND">India</option>
+                    <option value="USA">USA</option>
+                </select><br><br>
+                <label><b>Email</b></label><br>
+                <input type="text" name="email" id="Uname" placeholder="Enter your email" size="50" required><br><br>
+                <label><b>Phone No</b></label>
+                <input type="number" name="phone" placeholder="Enter your Phone Number" size="10" required id="Uname"><br><br>
+                <label>SEX:</label>
+                <input type="radio" name="msex" value="Male">MALE <input type="radio" name="fsex" value="Female">FEMALE<br><br>
+                <label><b>Language</b></label>
+                <input type="checkbox" name="en" value="en" checked>English <input type="checkbox" name="nonen">Non english<br><br>
+                <input type="submit" name="submit" value="submit" id="log">
+            </form>
+        </div>
+    </body>
+</html>

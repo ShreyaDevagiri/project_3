@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="Login Page">
+        <meta name="description" content="Login Page with validation">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="vallogin.js"></script>
+    </head>
+    <body onload="document.login.uid.focus();">
+        <h2>Login Page</h2><br>
+        <div class="login">
+            <form id="login" name="login" onsubmit="return loginValidation()">
+                <label><b>Username</b></label><br>
+                <input type="text" name="uid" id="Uname" size="20" placeholder="Enter your name" required><br><br>
+                <label><b>Password</b></label><br>
+                <input type="password" name="password" id="Pass" size="20" placeholder="Enter your password" required><br><br>
+                <input type="submit" name="submit" value="login" id="log"><br><br>
+                <input type="checkbox" id="check"><span>Remember me</span>
+                <a href="register.html">New USER Register here</a>
+            </form>
+        </div>
+    </body>
+</html>
+
+  
